@@ -1,0 +1,88 @@
+.App {
+  text-align: left;
+  background-color: #edf0ef;
+  display: block;
+  justify-content: center;
+  max-width: 310px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #424242;
+}
+.text {
+  border-radius: 5px;
+  padding: 5px;
+}
+.btn {
+  width: auto;
+  margin: 7px 7px 7px 1px;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: normal;
+}
+.neumorphic, #numbers input:focus, button:focus{
+  background-color: #edf0ef;
+  border: 0 none;
+  box-shadow: 3px 3px 6px #d6d6d6, -3px -3px 6px #ffffff;
+  color: #424242;
+}
+.btn.neumorphic:hover:not(.App, .neumorphic-txt){
+  transform: scale(105%);
+}
+
+#numbers input:active, button:active{
+  box-shadow: inset 2px 2px 5px #d6d6d6, inset -3px -3px 7px #ffffff;
+}
+.neumorphic-txt{
+    box-shadow: inset 2px 2px 5px #2d2b2b, inset -3px -3px 7px #1a1818;
+    background: #333333;
+    color: coral;
+    border-radius: 5px;
+}
+.exponents {
+  padding: 2px 5px;
+}
+.enter {
+  float: right;
+}
+textarea#process-input {
+  padding: 15px;
+}
+textarea#process-input, #result {
+  width: 95%;
+  height: 90px;
+  max-width: 290px;
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#numbers button, #exponents button {
+  width: 47px;
+}
+#result{
+  height: 45px;
+  padding: 15px;
+  margin: 0;
+  color: coral;
+  word-break: break-all;
+}
+#result span {
+  padding: 10px;
+}
+#numbers {
+  margin-top: 5px;
+}
+#exponents button {
+  text-align: right;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+#exponents div:first-child button {
+  width: auto;
+  text-align: left;
+  padding: 13px 20px;
+}
